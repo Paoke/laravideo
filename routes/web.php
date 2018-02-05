@@ -18,4 +18,6 @@ Route::get('/', function () {
 Route::group(['prefix'=>'admin','namespace'=>'Admin'],function (){
     //后台登录
     Route::get('/login','EntryController@loginForm');
+
+    Route::post('/login','EntryController@login');
 });
